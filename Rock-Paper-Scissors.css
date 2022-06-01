@@ -1,0 +1,147 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	display: flex;
+	font-family: "Nunito", sans-serif;
+	font-weight: 400;
+	color: #333;
+	font-size: 40px;
+}
+.main {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	display: flex;
+}
+.player1 {
+	background-color: white;
+	border: 5px dashed mediumblue;
+	height: 100vh;
+	width: 50vw;
+	display: flex;
+	position: relative;
+	z-index: 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-evenly;
+}
+.computer {
+	background-color: white;
+	border: 5px dashed red;
+	height: 100vh;
+	width: 50vw;
+	display: flex;
+	position: relative;
+	z-index: 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-evenly;
+}
+.newGame {
+	position: absolute;
+	right: 42%;
+	left: 42%;
+	z-index: 1;
+	border: none;
+	background-color: #eee;
+	color: #222;
+	font-size: 20px;
+	font-family: "Nunito", sans-serif;
+	padding: 15px;
+	cursor: pointer;
+	border-top: 0px;
+	border-left: 5px;
+	border-right: 5px;
+	border-bottom: 5px;
+	border-color: rgb(133, 66, 163);
+	border-style: solid;
+}
+.result {
+	position: absolute;
+	text-align: center;
+	top: 75%;
+	right: 35%;
+	left: 35%;
+	z-index: 1;
+	border: 3px dashed royalblue;
+	border-radius: 20%;
+	background-color: rgb(177, 206, 245);
+	color: #222;
+	font-size: 20px;
+	font-family: "Nunito", sans-serif;
+	padding: 30px;
+	cursor: pointer;
+	border-radius: 30%;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+	border-radius: 60px;
+	cursor: pointer;
+}
+
+.stone {
+	height: 19vh;
+	width: 12vw;
+	position: absolute;
+	top: 25%;
+	left: 34%;
+	z-index: 1;
+}
+
+.paper {
+	height: 19vh;
+	width: 12vw;
+	position: absolute;
+	top: 25%;
+	left: 54%;
+	z-index: 1;
+}
+
+.scissors {
+	height: 19vh;
+	width: 12vw;
+	position: absolute;
+	top: 45%;
+	left: 44%;
+	z-index: 1;
+}
+
+.winner {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40%;
+	background-color: rgb(99, 148, 212);
+	padding: 6rem;
+	border-radius: 5px;
+	box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+	z-index: 10;
+}
+.closebtn {
+	position: absolute;
+	top: 10px;
+	right: 8px;
+	font-size: 40px;
+	color: #333;
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+.paragraf {
+	color: black;
+	font-size: 40px;
+	padding: 10px;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
